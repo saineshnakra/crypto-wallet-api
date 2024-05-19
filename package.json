@@ -1,0 +1,20 @@
+{
+  "name": "crypto-wallet-api",
+  "version": "1.0.0",
+  "description": "A Node.js API service for generating Bitcoin wallets from mnemonics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^6.1.5",
+    "coinkey": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "hdkey": "^2.1.0"
+  }
+}
