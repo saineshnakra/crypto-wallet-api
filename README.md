@@ -84,7 +84,6 @@ Commit your changes (git commit -m 'Add some feature').
 Push to the branch (git push origin feature-branch).
 Open a pull request.
 
-Open to : Security updates on the backend and frontend.
 # License 
 
 This project is licensed under the MIT License.
