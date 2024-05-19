@@ -54,3 +54,41 @@ Use Postman or any API client to test the endpoint:
     "privateKey": "0c28fca386c7a2279d215eede366f6eb15a3cc9ef9b38530d9a3adf0af6c310d",
     "WIF": "5HueCGU8rMjxEXxiPuD5BDu26TmVQjqpsfsbyT3sK4I5w4Q3QD6"
 }
+```
+
+# Folder Structure 
+
+crypto-wallet-api/
+├── controllers/
+│   └── walletController.js
+├── models/
+│   └── walletModel.js
+├── routes/
+│   └── walletRoutes.js
+├── services/
+│   └── walletService.js
+├── .env
+├── app.js
+├── package.json
+├── package-lock.json
+└── README.md
+
+# Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes.
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
+
+# License 
+
+This project is licensed under the MIT License.
+
+# Contact
+
+If you have any questions or suggestions, feel free to open an issue or contact me directly.
+
