@@ -9,6 +9,7 @@ A Node.js API service for generating Bitcoin wallet information from a mnemonic 
 - Built with Express.js for a robust API structure.
 - Secure and optimized using industry-standard libraries.
 
+
 ## Installation
 
 1. Clone the repository:
@@ -56,22 +57,11 @@ Use Postman or any API client to test the endpoint:
 }
 ```
 
-# Folder Structure 
+# Testing
 
-crypto-wallet-api/
-├── controllers/
-│   └── walletController.js
-├── models/
-│   └── walletModel.js
-├── routes/
-│   └── walletRoutes.js
-├── services/
-│   └── walletService.js
-├── .env
-├── app.js
-├── package.json
-├── package-lock.json
-└── README.md
+To run jest tests 
+npm test
+
 
 # Contributing
 
