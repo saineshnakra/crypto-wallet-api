@@ -1,12 +1,12 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const walletRoutes = require("./routes/walletRoutes");
+import express, { json } from "express";
+import { config } from "dotenv";
+import walletRoutes from "./routes/walletRoutes";
 
-dotenv.config();
+config();
 
 const app = express();
 
-app.use(express.json());
+app.use(json());
 
 app.use("/api/wallet", walletRoutes);
 

@@ -1,8 +1,8 @@
-const { generateWalletInfo } = require("../services/walletService");
+import { generateWalletInfo } from "../services/walletService";
 
 const createWallet = (req, res) => {
   const { mnemonic } = req.body;
-  
+
   if (!mnemonic) {
     return res.status(400).json({ error: "Mnemonic is required" });
   }
@@ -11,8 +11,10 @@ const createWallet = (req, res) => {
     const walletInfo = generateWalletInfo(mnemonic);
     return res.json(walletInfo);
   } catch (error) {
-    return res.status(500).json({ error: "Error generating wallet info" });
+    return res
+      .status(500)
+      .json({ error: "Error generating wallet info" + `e` });
   }
 };
 
-module.exports = { createWallet };
+export default { createWallet };
