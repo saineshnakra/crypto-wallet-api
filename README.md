@@ -56,23 +56,6 @@ Use Postman or any API client to test the endpoint:
 }
 ```
 
-# Folder Structure 
-
-crypto-wallet-api/
-├── controllers/
-│   └── walletController.js
-├── models/
-│   └── walletModel.js
-├── routes/
-│   └── walletRoutes.js
-├── services/
-│   └── walletService.js
-├── .env
-├── app.js
-├── package.json
-├── package-lock.json
-└── README.md
-
 # Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
