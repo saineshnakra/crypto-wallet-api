@@ -1,6 +1,6 @@
-import { generateWalletInfo } from "../services/walletService";
+import { generateWalletInfo } from "../services/walletService.js";
 
-const createWallet = (req, res) => {
+export const createWallet = (req, res) => {
   const { mnemonic } = req.body;
 
   if (!mnemonic) {
@@ -11,10 +11,6 @@ const createWallet = (req, res) => {
     const walletInfo = generateWalletInfo(mnemonic);
     return res.json(walletInfo);
   } catch (error) {
-    return res
-      .status(500)
-      .json({ error: "Error generating wallet info" + `e` });
+    return res.status(500).json({ error: "Error generating wallet info" });
   }
 };
-
-export default { createWallet };

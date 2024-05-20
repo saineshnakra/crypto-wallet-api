@@ -1,12 +1,12 @@
-import express, { json } from "express";
-import { config } from "dotenv";
-import walletRoutes from "./routes/walletRoutes";
+import express from "express";
+import dotenv from "dotenv";
+import walletRoutes from "./routes/walletRoutes.js";
 
-config();
+// Load environment variables from .env file
+dotenv.config();
 
 const app = express();
-
-app.use(json());
+app.use(express.json());
 
 app.use("/api/wallet", walletRoutes);
 
