@@ -8,7 +8,7 @@ A Node.js API service for generating Bitcoin wallet information from a mnemonic 
 - Follows BIP44 path for Bitcoin derivation.
 - Built with Express.js for a robust API structure.
 - Secure and optimized using industry-standard libraries.
-
+ 
 
 ## Installation
 
